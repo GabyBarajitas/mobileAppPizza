@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Planet</title>
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    <link rel="stylesheet" href="./estilos/estilo item pizza.css">
+    <link rel="stylesheet" href="./fuentes/fonts.css">
+    
+</head>
+<body>
+<div class="paginaCompra">
+    <img src="./images/logo-principal.png" alt="Logo Pizza Planet" class = "logo">
+    <div class="container-izquierdo">
+        <p class = "encabezado">Find your favourite foods</p>
+        <p class = "emoticono">😜</p>
+    </div>
+    <div class ="banner"> <!-- Sección de descuento banner -->
+            <img src="./images/pizza.png" alt="" class="imgDescuento">
+            <ul class = "listaDescuento">
+                <li class ="porDescuento">25% Off</li>
+                <li class = "descuentoMenu">Enjoy 25% discount on</li>
+                <li class="descuentoMenu">Full Menu</li>
+            </ul>
+    </div>
+    <section class = "pizza-item-list">
+        <div class = "pizza-item">
+            <img src="" alt="Imagen de pizza" class ="imagenPizza">
+            <div class = "rectangulo">
+                <div class = "infoPizza">
+                    <p class ="nombrePizza"></p>
+                    <p class = "ingrediente"></p>
+                </div>
+                <div class = "infoPrecio">
+                    <p class = "precio" ><span>$</span></p>
+                     <button class = "item-pizza-button-add" >+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "section-buttn-shop-cart">
+        <div class="fix-footer">
+            <div class = "info-items">
+                <p class ="suma-items">?</p>
+                <img class = "icon-shop-cart" src="./images/carrito-de-compras.png" alt="Carrito de compra">
+            </div>
+        </div>
+    </section>
+            
+    <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
+        <header class = "encabezadoCarrito">
+            <button class="clearAll" >Clear all</button>
+            <h1 class = "encabezado">Your Cart</h1>
+            <h1 class = "encabezado">Food</h1>
+        </header>
+        <div class = "item-selec">
+            <div class = "item-selec-info">
+                <div class = "img-precio-nombre">
+                <img src="./images/pizza01.png" class = "item-img-pizza" alt="Pizza seleccionada">
+                <p class = "item-selec-info-precio">$12.90</p>
+                <p class = "item-selec-info-nombre"> Greek Pizza</p>
+            </div>
+                <div class = "item-selec-cantidad">
+                    <p class ="buttn-item-selec-suma">+</p>
+                    <p class ="item-selec-info-cantidad">1</p>
+                    <p class ="buttn-item-selec-resta">-</p>
+                </div>
+            </div>
+            <div class="container-derecho">
+                <div class = "resumenCompra"> <!-- Resumen Compra  esta clase debe ser display grid para ordenar en tabla los elementos-->
+                    <div class = "resComItemTotal">Item Total:</div>
+                    <div class = "resComItemTotalEuros"><!--${..}--></div>
+                    <div class = "resComDeliveryCharge">Delivery Charge:</div>
+                    <div class = "resComDeliveryChargeEuros"><!--${..}--></div>
+                    <div class = "resComTax">Tax:</div>
+                    <div class = "resComTaxEuros"><!--${..}--></div>
+                    <div class = "resComTotal">Total:</div>
+                    <div class = "resComTotalEuros"><!--${..}--></div>
+                    <button class = "buttn-checkout">Checkout</button>
+                </div>   
+            </div>
+        </div>
+    </div>  
+</div>
+<script src = "./datos/datos.js"></script>
+<script src = "./funciones/funciones.js"></script>
+</body>         
+</html>
