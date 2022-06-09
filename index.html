@@ -12,49 +12,54 @@
 </head>
 <body>
 <div class="paginaCompra">
-    <img src="./images/logo-principal.png" alt="Logo Pizza Planet" class = "logo">
-    <div class="container-izquierdo">
-        <p class = "encabezado">Find your favourite foods</p>
-        <p class = "emoticono">😜</p>
-    </div>
-    <div class ="banner"> <!-- Sección de descuento banner -->
-            <img src="./images/pizza.png" alt="" class="imgDescuento">
-            <ul class = "listaDescuento">
-                <li class ="porDescuento">25% Off</li>
-                <li class = "descuentoMenu">Enjoy 25% discount on</li>
-                <li class="descuentoMenu">Full Menu</li>
-            </ul>
-    </div>
-    <section class = "pizza-item-list">
-        <div class = "pizza-item">
-            <img src="" alt="Imagen de pizza" class ="imagenPizza">
-            <div class = "rectangulo">
-                <div class = "infoPizza">
-                    <p class ="nombrePizza"></p>
-                    <p class = "ingrediente"></p>
-                </div>
-                <div class = "infoPrecio">
-                    <p class = "precio" ><span>$</span></p>
-                     <button class = "item-pizza-button-add" >+</button>
+    <div id = "paginaUno">
+        <img src="./images/logo-principal.png" alt="Logo Pizza Planet" class = "logo">
+        <div class="container-izquierdo">
+            <p class = "encabezado">Find your favourite foods</p>
+            <p class = "emoticono">😜</p>
+        </div>
+        <div class ="banner"> <!-- Sección de descuento banner -->
+                <img src="./images/pizza.png" alt="" class="imgDescuento">
+                <ul class = "listaDescuento">
+                    <li class ="porDescuento">25% Off</li>
+                    <li class = "descuentoMenu">Enjoy 25% discount on</li>
+                    <li class="descuentoMenu">Full Menu</li>
+                </ul>
+        </div>
+        <section class = "pizza-item-list">
+            <div class = "pizza-item">
+                <img src="" alt="Imagen de pizza" class ="imagenPizza">
+                <div class = "rectangulo">
+                    <div class = "infoPizza">
+                        <p class ="nombrePizza"></p>
+                        <p class = "ingrediente"></p>
+                    </div>
+                    <div class = "infoPrecio">
+                        <p class = "precio" ><span>$</span></p>
+                        <button class = "item-pizza-button-add" >+</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class = "section-buttn-shop-cart">
-        <div class="fix-footer">
-            <div class = "info-items">
-                <p class ="suma-items">?</p>
-                <img class = "icon-shop-cart" src="./images/carrito-de-compras.png" alt="Carrito de compra">
+        <section class = "section-buttn-shop-cart">
+            <div class="fix-footer">
+                <div class = "info-items">
+                    <p class ="suma-items">?</p>
+                    <i src="./images/carrito-de-compras.png" alt="Carrito de compra" onclick = displayCarrito() class = "icon-shop-cart" ></i>
+                </div>
             </div>
-        </div>
-    </section>
-            
-    <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
+        </section>
+    </div>       
+    <div id = "paginaCarrito"><!-- Pagina de CheckOut  -->
         <header class = "encabezadoCarrito">
-            <button class="clearAll" >Clear all</button>
+            <div class="seccion-botones">
+            <button class="clearAll" onclick="clearAll()" >Clear all</button>
+            <i>X</i>
+            </div>
             <h1 class = "encabezado">Your Cart</h1>
             <h1 class = "encabezado">Food</h1>
+            
         </header>
         <div class = "item-selec">
             <div class = "item-selec-info">

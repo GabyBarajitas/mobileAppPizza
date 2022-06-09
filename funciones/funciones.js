@@ -41,4 +41,14 @@ function despliegaMenu(){
   }
   insertNodePizza(concatNodes);
 }
+
+function displayCarrito(){
+  document.getElementById("paginaCarrito").style.display ="block";
+  document.getElementById("paginaUno").style.display ="none";
+}
+
+function clearAll(){
+  document.getElementById("paginaCarrito").style.display ="none";
+  document.getElementById("paginaUno").style.display ="block";
+}
 despliegaMenu();
